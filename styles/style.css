@@ -13,9 +13,131 @@ html {
   block-size: 100%;
   margin: auto;
   color: #fff;
-  font-family: 'Fira Sans Condensed', sans-serif;
+  font-family: "Fira Sans Condensed", sans-serif;
   font-size: 18px;
-  background-color: #1b1919;
+  background-color: #152b4d;
+}
+
+.search-form__fieldset-title {
+  font-family: "Fira Sans Condensed", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 100%;
+  letter-spacing: 0%;
+}
+
+.search-form__label {
+  display: inline-block;
+  background-color: transparent;
+}
+
+.visually-hidden {
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+}
+
+.content {
+  display: grid;
+  grid-template-columns: 61% 34%;
+  padding: 12% 1% 0% 3%;
+  column-gap: 3%;
+  background-color: #08471b;
+}
+
+.result {
+  padding-top: 11%;
+}
+
+video {
+  background-size: cover;
+  width: 100%;
+  height: auto;
+}
+
+.search-form {
+  display: flex;
+  flex-direction: row;
+  gap: 10%;
+}
+
+.search-form__fieldset {
+  border: none;
+}
+
+.search-form__textfield {
+  background-color: transparent;
+  border: none;
+  width: 120%;
+  border-top: 2px solid #d9d9d9;
+  border-bottom: 2px solid #d9d9d9;
+  font-family: Fira Sans Condensed;
+  font-weight: 400;
+  font-size: 18px;
+  color: #ffffffb2;
+  line-height: 100%;
+}
+
+.search-form__pseudo-checkbox {
+  width: 20px;
+  height: 20px;
+  border: 1px solid #d9d9d9;
+  background-color: transparent;
+  display: inline-block;
+  margin-right: 5px;
+  vertical-align: middle;
+}
+
+.title {
+  font-family: "Oswald", sans-serif;
+  font-weight: 700;
+  font-size: 75px;
+  line-height: 94%;
+  text-transform: uppercase;
+}
+
+.content__list-container {
+  width: auto;
+  height: 36%;
+  padding-top: 6%;
+  overflow: hidden;
+  overflow-y: scroll;
+}
+
+.content__accent {
+  text-transform: uppercase;
+}
+
+.content__video-card {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-bottom: 20px;
+}
+
+.content__video-card-thumbnail {
+  width: 50%;
+  height: auto;
+}
+
+.search-form__submit-button {
+  width: 28%;
+  height: 0%;
+  padding-top: 0%;
+  font-family: "Fira Sans Condensed", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 100%;
+}
+
+button {
+  background-color: transparent;
+  border: 1px solid #d9d9d9;
+  color: #d9d9d9;
 }
 
 h1,
@@ -47,5 +169,5 @@ ol {
 }
 
 .custom-scrollbar::-webkit-scrollbar-thumb {
-  background-color: #D9D9D9;
+  background-color: #d9d9d9;
 }
