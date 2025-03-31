@@ -4,10 +4,16 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #545050;
+  z-index: 1;
 }
 
 .error__title {
+  display: inline-block;
+  width: 100%;
+  height: auto;
+  margin: 56% 0% 0% 0%;
+  padding: 26% 0% 26% 0%;
+  background-color: #545050;
   color: #fff;
   font-family: Oswald, sans-serif;
   font-size: 30px;
