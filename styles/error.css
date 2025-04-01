@@ -8,15 +8,16 @@
 }
 
 .error__title {
-  display: inline-block;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 100%;
-  height: auto;
-  margin: 56% 0% 0% 0%;
-  padding: 26% 0% 26% 0%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
   background-color: #545050;
   color: #fff;
   font-family: Oswald, sans-serif;
   font-size: 30px;
-  text-align: center;
   text-transform: uppercase;
 }
