@@ -6,6 +6,12 @@
   box-sizing: border-box;
 }
 
+html {
+  display: flex;
+  justify-content: center;
+  block-size: 100%;
+}
+
 ul,
 ol {
   list-style-type: none;
@@ -29,10 +35,6 @@ ol {
   font-family: "Fira Sans Condensed", sans-serif;
   font-size: 18px;
   background-color: #1b1919;
-}
-
-html {
-  block-size: 100%;
 }
 
 a {
@@ -103,7 +105,8 @@ button:hover {
   cursor: pointer;
 }
 
-.content__card-link:active {
+.content__card-link:active,
+.content__card-link_current {
   text-decoration: none;
   background-color: #545050;
 }
@@ -120,7 +123,7 @@ button:hover {
 .content__details {
   display: flex;
   flex-direction: column;
-  gap: 2.5%;
+  gap: 3.6%;
   padding: 0% 6.5% 0% 0%;
 }
 
@@ -128,7 +131,7 @@ button:hover {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  row-gap: 20px;
+  row-gap: 25px;
   padding-left: 1%;
 }
 
@@ -211,7 +214,8 @@ button:hover {
   vertical-align: middle;
 }
 
-.search-form__checkbox[type="checkbox"]:active + span {
+.search-form__checkbox[type="checkbox"]:active + span,
+.search-form__checkbox[type="checkbox"]:checked + span {
   width: 16px;
   height: 16px;
   background-color: #d9d9d9;
@@ -262,8 +266,8 @@ button:hover {
   outline-offset: 1px;
 }
 
-.search-form__label-text:hover {
-  text-decoration: underline;
+.search-form__label:has(.search-form__checkbox[type="checkbox"]:hover) {
+  text-decoration: underline #d9d9d9;
   cursor: pointer;
 }
 
