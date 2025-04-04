@@ -9,6 +9,7 @@
 html {
   display: flex;
   justify-content: center;
+  align-items: center;
   block-size: 100%;
 }
 
@@ -45,7 +46,8 @@ ol {
   inline-size: 1200px;
   block-size: 100%;
   margin: auto;
-  color: #fff;
+  margin-top: 10%;
+  color: #ffffff;
   font-family: "Fira Sans Condensed", sans-serif;
   font-size: 18px;
   background-color: #1b1919;
@@ -57,8 +59,8 @@ a {
 
 button {
   background-color: transparent;
-  border: 1px solid #d9d9d9;
-  color: #d9d9d9;
+  border: 1px solid #ffffff;
+  color: #ffffff;
 }
 
 .button[type="submit"] {
@@ -84,7 +86,7 @@ button:hover {
 }
 
 .button:focus-visible {
-  outline: 1px solid #d9d9d9;
+  outline: 1px solid #ffffff;
   outline-offset: 1px;
 }
 
@@ -109,13 +111,28 @@ button:hover {
 }
 
 .content__accent {
+  display: inline-block;
+  border: 1px solid transparent;
+  width: 36%;
+  height: 32%;
+  position: relative;
   color: #545050;
   text-transform: uppercase;
 }
 
+.content__accent::before {
+  content: "-";
+  position: absolute;
+  background-color: #1b1919;
+  margin-top: -5%;
+  margin-left: 64%;
+  width: 19%;
+  height: 95%;
+}
+
 .content__card-link:hover {
   text-decoration: underline;
-  text-decoration-color: #d9d9d9;
+  text-decoration-color: #ffffff;
   cursor: pointer;
 }
 
@@ -130,7 +147,7 @@ button:hover {
 }
 
 .content__card-link:focus-visible {
-  outline: 1px solid #d9d9d9;
+  outline: 1px solid #ffffff;
   outline-offset: 3px;
 }
 
@@ -165,7 +182,7 @@ button:hover {
   white-space: nowrap;
   overflow: hidden;
   max-width: 192px;
-  color: #d9d9d9;
+  color: #ffffff;
 }
 
 .content__video-card-description {
@@ -174,7 +191,7 @@ button:hover {
   font-size: 18px;
   line-height: 16.2px;
   letter-spacing: normal;
-  color: #d9d9d9;
+  color: #ffffff;
 }
 
 .content__video-card {
@@ -224,7 +241,7 @@ button:hover {
   width: 20px;
   height: 20px;
   background-color: transparent;
-  border: 1px solid #d9d9d9;
+  border: 1px solid #ffffff;
   display: inline-block;
   margin-right: 5px;
   vertical-align: middle;
@@ -234,7 +251,7 @@ button:hover {
 .search-form__checkbox[type="checkbox"]:checked + span {
   width: 16px;
   height: 16px;
-  background-color: #d9d9d9;
+  background-color: #ffffff;
   border: 3px double #1b1919;
   display: inline-block;
   margin-right: 5px;
@@ -278,12 +295,12 @@ button:hover {
 }
 
 .search-form__label:has(.search-form__checkbox[type="checkbox"]:focus-visible) {
-  outline: 1px solid #d9d9d9;
+  outline: 1px solid #ffffff;
   outline-offset: 1px;
 }
 
 .search-form__label:has(.search-form__checkbox[type="checkbox"]:hover) {
-  text-decoration: underline #d9d9d9;
+  text-decoration: underline #ffffff;
   cursor: pointer;
 }
 
@@ -292,12 +309,12 @@ button:hover {
   outline: none;
   border: none;
   width: 120%;
-  border-top: 1.5px solid #d9d9d9;
-  border-bottom: 1.5px solid #d9d9d9;
+  border-top: 1.5px solid #ffffff;
+  border-bottom: 1.5px solid #ffffff;
   font-family: "Fira Sans Condensed", sans-serif;
   font-weight: 400;
   font-size: 18px;
-  color: #d9d9d9;
+  color: #ffffff;
   line-height: 100%;
 }
 
@@ -306,7 +323,7 @@ button:hover {
 }
 
 .search-form__textfield:focus-visible {
-  outline: 1px solid #d9d9d9;
+  outline: 1px solid #ffffff;
   outline-offset: 1px;
 }
 
@@ -335,5 +352,5 @@ video {
 }
 
 .custom-scrollbar::-webkit-scrollbar-thumb {
-  background-color: #d9d9d9;
+  background-color: #ffffff;
 }
